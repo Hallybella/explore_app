@@ -2,7 +2,7 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:explore_hng/models/rest_country_model.dart';
-import 'package:explore_hng/services/utilities.dart';
+import 'package:explore_hng/services/misc/utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/container.dart';

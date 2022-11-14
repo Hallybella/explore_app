@@ -1,16 +1,42 @@
-# explore_hng
+# Explore App
 
-A new Flutter project.
+## App description and features
 
-## Getting Started
+Explore mobile application is developed to provide adequate information about countries around the world to users. Information given are adequate, accurate and up-to-date. Users can view information such as current population, languages, flags, capital, currnecies etc.
 
-This project is a starting point for a Flutter application.
+## Application Structure
 
-A few resources to get you started if this is your first Flutter project:
+The application has been structured such that the UI components are separated from the logic folder. It also has some controllers for the theme, models, and constants.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Main.dart serves has the entry point to run the application, the first first screen is returned upon successful launch.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Libraries
+
+For seamless experience onthis application, the following are the dependencies;
+
+1. Getx
+2. Shared preferences
+3. Get storage
+4. HTTP
+5. Carousel Slider
+
+## Challenges
+
+Ome of the major challenge i had while developing this application was the data cleaning and model. I was able to resolve it by consulting an online JSON formatter which presented the data properly and also i used app.quicktype to generate the models.
+Also had difficulty getting the locale function updated with the translation data supplied from the API.
+
+## Proposed Features
+
+It would nice to have a real time map features which would let users view places, calculate distance and probably have a real navigation feature.
+
+## Notes
+
+The application takes about 3 to 5 minutes to launch due to some data manipulation processes, however this would be optimized in subsequent updates.
+
+Also, to test on appetize.io, kindly set the android version to 12.0 for smooth experience.
+
+A link to the APK file
+https://drive.google.com/file/d/14cH0ZpQhxP0YgyQxzS7qPbcKqkIRroyl/view?usp=share_link
+
+A link to the Appetize.io link
+https://appetize.io/app/im4bbzyayuxjrovvcst33iboe4
