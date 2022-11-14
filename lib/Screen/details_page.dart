@@ -2,11 +2,14 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:explore_hng/models/rest_country_model.dart';
-import 'package:explore_hng/services/utilities.dart';
+import 'package:explore_hng/services/misc/utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+
+import '../services/api_services/lang_convert.dart';
 
 class DetailsPage extends StatefulWidget {
   DetailsPage({Key? key, this.countryDetails, this.flags}) : super(key: key);
@@ -19,14 +22,25 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
+  final GetLang langController = Get.put(GetLang());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: context.theme.backgroundColor,
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          iconTheme: IconThemeData(
-            color: Colors.black,
+          backgroundColor: context.theme.bottomAppBarColor,
+          shadowColor: Colors.transparent,
+          actionsIconTheme: IconThemeData(
+            color: Color(0xFF030F23),
           ),
+          iconTheme: IconThemeData(
+            color: Get.isDarkMode ? Colors.white : Colors.black,
+          ),
+          // titleTextStyle: TextStyle(
+          //   color: Color(0xFF030F23),
+          //   fontSize: 24,
+          //   fontWeight: FontWeight.bold,
+          // ),
           title: Text(widget.countryDetails!.name!.common!),
         ),
         body: ListView(children: [

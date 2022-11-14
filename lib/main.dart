@@ -7,9 +7,12 @@ import 'package:get_storage/get_storage.dart';
 import 'Screen/home.dart';
 import 'controllers/theme_controllers/app_theme.dart';
 import 'controllers/theme_controllers/theme_service.dart';
+import 'services/api_services/lang_convert.dart';
+import 'services/misc/language_tool.dart';
 
 void main() async {
   await GetStorage.init();
+  // final translator = GoogleTranslator();
   runApp(const MyApp());
 }
 
@@ -24,6 +27,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  // final GetLang lazyLangController = Get.lazyPut();
   // This widget is the root of your application.
   Locale? _locale;
 
@@ -36,7 +40,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      locale: const Locale.fromSubtags(languageCode: 'de'),
+      locale: Get.deviceLocale,
       debugShowCheckedModeBanner: false,
       theme: Themes.light,
       darkTheme: Themes.dark,
