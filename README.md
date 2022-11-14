@@ -31,12 +31,12 @@ It would nice to have a real time map features which would let users view places
 
 ## Notes
 
-The application takes about 3 to 5 minutes to launch due to some data manipulation processes, however this would be optimized in subsequent updates.
+The application takes about 2 to 3 minutes to launch on physical device depending on the network. This is due to some data manipulation processes, however this would be optimized in subsequent updates.
 
 Also, to test on appetize.io, kindly set the android version to 12.0 for smooth experience.
 
 A link to the APK file
-https://drive.google.com/file/d/14cH0ZpQhxP0YgyQxzS7qPbcKqkIRroyl/view?usp=share_link
+https://drive.google.com/file/d/1IlEkSw6HZ69pRULz9x6TYkVvMp0ENyQ3/view?usp=share_link
 
 A link to the Appetize.io link
-https://appetize.io/app/im4bbzyayuxjrovvcst33iboe4
+https://appetize.io/app/fisc7ugv2elnqnmnczikaf3qwa

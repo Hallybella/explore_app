@@ -19,6 +19,9 @@ class Themes {
     appBarTheme: const AppBarTheme(
       backgroundColor: Colors.white,
       shadowColor: Colors.transparent,
+      iconTheme: IconThemeData(
+        color: Colors.black,
+      ),
       actionsIconTheme: IconThemeData(
         color: Color(0xFF030F23),
       ),
@@ -43,6 +46,9 @@ class Themes {
       ),
     ),
     appBarTheme: const AppBarTheme(
+      iconTheme: IconThemeData(
+        color: Colors.white,
+      ),
       backgroundColor: Color(0xFF030F23),
       shadowColor: Colors.transparent,
       actionsIconTheme: IconThemeData(
